@@ -19,6 +19,8 @@
     <div class="two-thirds">
       <table ng-controller="TimetableCtrl">
         <tr><th>time</th><th>title</th><th>detail</th></tr>
+        /* the ng-repeat directive on the opening <tr> tag
+        indicates that the table row should act like a loop */
         <tr ng-repeat="session in sessions">
           <td>{{ session.time }}</td>
           <td>{{ session.title }}</td>
