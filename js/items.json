@@ -1,3 +1,7 @@
+/* The JSON data contains several objects, each
+of which is displayed in the page. there is no
+JavaScript loop written in the controller. Instead, the
+view is where the loop occurs. */
 {
     "sessions": [
        {
