@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <title>Angular External Data</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+    <script src="js/angular-external-data.js"></script>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <h1>THE MAKER BUS</h1>
+    </header>
+    <h2>Buy tickets</h2>
+    <div class="third">
+      <img src="img/toys1.jpg" alt="Circuit boards">
+    </div>
+    <div class="two-thirds">
+      <table ng-controller="TimetableCtrl">
+        <tr><th>time</th><th>title</th><th>detail</th></tr>
+        <tr ng-repeat="session in sessions">
+          <td>{{ session.time }}</td>
+          <td>{{ session.title }}</td>
+          <td>{{ session.detail }}</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
